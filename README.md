@@ -40,7 +40,6 @@ Booking-Management-System/
 │       ├── app/             # Pages & layout
 │       ├── components/      # Reusable UI components
 │       └── lib/             # API client, types, utilities
-├── .github/workflows/       # CI/CD pipeline
 └── README.md
 ```
 
@@ -80,7 +79,6 @@ Booking-Management-System/
 | Database  | PostgreSQL 16+                      |
 | ORM       | Prisma 5                            |
 | Testing   | Jest                                |
-| CI/CD     | GitHub Actions                      |
 
 ---
 
