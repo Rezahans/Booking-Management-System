@@ -93,7 +93,7 @@ Booking-Management-System/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/Booking-Management-System.git
+git clone https://github.com/Rezahans/Booking-Management-System.git
 cd Booking-Management-System
 ```
 
