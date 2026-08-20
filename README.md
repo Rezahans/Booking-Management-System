@@ -40,7 +40,6 @@ Booking-Management-System/
 │       ├── app/             # Pages & layout
 │       ├── components/      # Reusable UI components
 │       └── lib/             # API client, types, utilities
-├── docker-compose.yml       # Multi-container orchestration
 ├── .github/workflows/       # CI/CD pipeline
 └── README.md
 ```
@@ -81,7 +80,7 @@ Booking-Management-System/
 | Database  | PostgreSQL 16+                      |
 | ORM       | Prisma 5                            |
 | Testing   | Jest                                |
-| DevOps    | Docker, Docker Compose, GitHub Actions CI |
+| CI/CD     | GitHub Actions                      |
 
 ---
 
@@ -90,7 +89,7 @@ Booking-Management-System/
 ### Prerequisites
 
 - **Node.js** v20+ and **npm** v10+
-- **PostgreSQL** 16+ running locally (or via Docker)
+- **PostgreSQL** 16+ running locally
 - **Git**
 
 ### 1. Clone the Repository
@@ -140,19 +139,6 @@ npm run dev
 ```
 
 The frontend will be running at: **http://localhost:3000**
-
----
-
-## 🐳 Docker Setup (Alternative)
-
-If you have Docker and Docker Compose installed:
-
-```bash
-# From root directory
-docker-compose up --build
-```
-
-This starts PostgreSQL, Backend (port 4000), and Frontend (port 3000) automatically.
 
 ---
 
