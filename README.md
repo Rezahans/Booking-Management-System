@@ -97,13 +97,10 @@ git clone https://github.com/<your-username>/Booking-Management-System.git
 cd Booking-Management-System
 ```
 
-### 2. Setup Backend
+### 2. Install & Setup Database
 
 ```bash
 cd backend
-
-# Install dependencies
-npm install
 
 # Create .env file (copy from example)
 cp .env.example .env
@@ -111,32 +108,27 @@ cp .env.example .env
 # Edit .env with your PostgreSQL credentials:
 # DATABASE_URL="postgresql://postgres:postgres@localhost:5432/booking_db?schema=public"
 
-# Run database migrations
+# Run database migrations and seed data
 npx prisma migrate dev --name init
-
-# Seed the database with sample data
 npx prisma db seed
-
-# Start development server
-npm run start:dev
+cd ..
 ```
 
-The backend API will be running at: **http://localhost:4000**
-Swagger API documentation: **http://localhost:4000/api/docs**
+### 3. Run the Application
 
-### 3. Setup Frontend
+You can start both the Frontend and Backend servers simultaneously with a single command from the root directory:
 
 ```bash
-cd frontend
+# Install dependencies for both backend and frontend
+npm run install:all
 
-# Install dependencies
-npm install
-
-# Start development server
+# Start both servers together
 npm run dev
 ```
 
-The frontend will be running at: **http://localhost:3000**
+- The frontend will be running at: **http://localhost:3000**
+- The backend API will be running at: **http://localhost:4000**
+- Swagger API documentation: **http://localhost:4000/api/docs**
 
 ---
 
